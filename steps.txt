@@ -1,0 +1,58 @@
+1.
+npm init -y
+
+npm install webpack webpack-cli
+
+npm install @babel/core babel-loader @babel/preset-react @babel/preset-env
+
+npm install react react-dom
+
+npm install style-loader css-loader
+
+2.
+src/index.js to be created
+
+src/index.html to be created with (<div id="root"></div>)
+
+3.
+webpack.config.js to be created
+
+4.
+.babelrc file to be created
+
+5.
+add to "scripts" (package.json)
+   "start": "webpack --mode-development --watch",
+   "build": "webpack --mode-production"
+
+npm start
+
+6.
+create components/App.js
+create styles/App.css
+
+7.
+imports...
+
+8.
+npm i html-webpack-plugin
+
+for webpack.config.js -> const HtmlWebpackPlugin = require('html-webpack-plugin') and
+   plugins: [
+        new HtmlWebpackPlugin({
+            template: "./src/index.html"
+          })
+      ]
+
+9.
+npm install webpack-dev-server
+        "start": "webpack --mode-development --watch",  -> "start": "webpack-dev-server --mode-development --open",
+npm start
+
+10.
+npm install axios
+
+11. https://react-bootstrap.github.io/getting-started/introduction
+npm install react-bootstrap bootstrap
+
+
