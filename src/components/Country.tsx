@@ -1,4 +1,4 @@
-import React, {useState}  from "react";
+import * as React from "react";
 import Button from "react-bootstrap/Button";
 import PropTypes from "prop-types";
 
@@ -6,7 +6,7 @@ import "../styles/Country.css";
 let number = 1;
 function Country(props) {
     // let number = 0;
-    const [selected, changeSelected] = useState(false);
+    const [selected, changeSelected] = React.useState(false);
 
 
     return(
